@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev 
+  jpa:  
+    hibernate:  
+      ddl-auto: update  
+    database-platform: org.hibernate.dialect.PostgreSQLDialect  
+  datasource:  
+    url: "jdbc:postgresql://localhost:5432/tms"  
+    username: postgres  
+    password: root123
+    driver-class-name: org.postgresql.Driver
+
+logging:
+   level:
+     com.zaxxer.hikari: debug
+
+spring.jpa.show-sql: true
